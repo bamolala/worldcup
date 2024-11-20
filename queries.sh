@@ -49,3 +49,7 @@ echo "$($PSQL "SELECT year, teams.name FROM games JOIN teams ON games.winner_id 
 
 echo -e "\nList of teams that start with 'Co':"
 echo "$($PSQL "SELECT DISTINCT name FROM teams WHERE name LIKE 'Co%'")"
+
+
+git add .gitignore .gitpod.yml expected_output.txt games.csv queries.sh
+git commit -m "Add or update files"
